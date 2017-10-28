@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'byebug'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'

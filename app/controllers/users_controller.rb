@@ -1,4 +1,4 @@
-require_relative '/Users/jacobabraham/Documents/Learn/app_email/app/mailers/example_mailer'
+require_relative '/Users/jacobabraham/Documents/Learn/emailmaker/app_email/app/mailers/example_mailer'
 
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        ExampleMailer.sample_email(@user).deliver_now
+         ExampleMailer.sample_email.deliver!
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else

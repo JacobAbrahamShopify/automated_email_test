@@ -1,10 +1,11 @@
 class ExampleMailer < ApplicationMailer
-  default from:  'any_from_address@example.com'
-  default to: 'trackify.test@gmail.com'
-
-  def sample_email(user)
-    @user = user
-    mail(subject: 'Sample Email')
-
+  default from:  'ebay@ebay.com'
+  default to: 'jabrah29@uic.edu'
+  def sample_email
+    mail(subject: 'SHIPPED: NEW AVID ELIXIE E3 Hydraulic Disc Brake For MTB/BMX Fold Bike Bicycle Front+Rear')
   end
+
+  def best_buy
+    mail(subject: 'Best Buy test email')
+  end 
 end
